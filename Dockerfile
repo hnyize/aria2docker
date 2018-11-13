@@ -8,6 +8,7 @@ RUN mkdir -p /var/run/nginx  &&  \
 RUN mkdir /download
 COPY webUI /usr/local/webUI/
 COPY run.sh /run.sh
+COPY nginx.conf /etc/nginx/nginx.conf
 RUN chmod +x /run.sh && chmod 777 /download
-EXPOSE 80
+EXPOSE 88
 CMD /run.sh
