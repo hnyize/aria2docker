@@ -6,7 +6,7 @@ RUN apk update &&  \
 RUN mkdir -p /var/run/nginx  &&  \
     touch /var/run/nginx/nginx.pid
 RUN mkdir /download
-COPY webUI /usr/local/webUI/
+COPY webUI /usr/local/
 COPY run.sh /run.sh
 RUN chmod +x /run.sh && chmod 777 /download
 EXPOSE 80
