@@ -11,4 +11,5 @@ COPY run.sh /run.sh
 COPY nginx.conf /etc/nginx/nginx.conf
 RUN chmod +x /run.sh && chmod 777 /download
 EXPOSE 88
+EXPOSE 6800
 CMD /run.sh
