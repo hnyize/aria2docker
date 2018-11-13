@@ -2,7 +2,7 @@
 
 echo "staring nginx for webUI..."
 /usr/sbin/nginx
-if [ "${secret}"="" ]; then
+if [ "${secret}"="" ] then
     echo "staring aria2 without password..."
     aria2c --enable-rpc --rp-clisten-all --dir=/download
 else
