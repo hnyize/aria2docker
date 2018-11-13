@@ -1,5 +1,4 @@
 #!/bin/sh
-
 echo "staring nginx for webUI..."
 /usr/sbin/nginx
 if [ "${secret}"="" ]; then
