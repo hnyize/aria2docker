@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "staring nginx for webUI..."
 /usr/sbin/nginx
-if [ "${secret}"="" ]; then
+if [ "${secret}" = "" ]; then
     echo "staring aria2 without password..."
     aria2c --enable-rpc --rpc-listen-all --dir=/download
 else
